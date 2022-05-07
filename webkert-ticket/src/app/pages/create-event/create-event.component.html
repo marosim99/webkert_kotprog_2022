@@ -1,0 +1,28 @@
+<div class="main_component">
+    <h1>Register an account</h1>
+    <form [formGroup]="newEventForm" (ngSubmit)="createEvent()">
+        <mat-form-field>
+            <mat-label for="name">Esemény neve:</mat-label>
+            <input matInput type="text" formControlName="name"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="date">Esemény dátuma:</mat-label>
+            <input matInput type="date" formControlName="date"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="location">Esemény helyszíne:</mat-label>
+            <input matInput type="text" formControlName="location"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="price">Jegy ára:</mat-label>
+            <input matInput type="number" formControlName="price"/>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="tickets">Eladásra kínált jegyek száma:</mat-label>
+            <input matInput type="number" formControlName="tickets"/>
+        </mat-form-field>
+        <span class="buttons">
+            <button mat-raised-button color="primary" type="submit">Register</button>
+        </span>
+    </form>
+</div>

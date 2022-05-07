@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mobilalk-ticket": {
+      "hosting": {
+        "webkert-ticket": [
+          "mobilalk-ticket"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mobilalk-ticket"
+  }
+}
